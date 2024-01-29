@@ -1,0 +1,189 @@
+.sliderbox{
+    width: 100vmin;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+
+}
+.slider img{
+    width: 100%;
+    
+}
+@keyframes slide{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-100%);
+    }
+    50%{
+        transform: translate(-200%);
+    }
+    75%{
+        transform: translate(-300%);
+    }
+    85%{
+        transform: translate(-400%);
+    }
+    100%{
+        transform: translate(-500%);
+    }
+}
+.content{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    left: 200px;
+
+}
+.content h5{
+    color: black;
+    font-size:28px ;
+    
+}
+.content h1{
+    color: black;
+    font-size: 25px;
+}
+.changecontent::after{
+    color: orange;
+    content: '';
+    animation: changetext 10s infinite linear;
+
+}
+@keyframes changetext{
+    0%{content: "Rabat";}
+    10%{content: "Marrakech";}
+    20%{content: "Tanger";}
+    30%{content: "Dakhla";}
+    40%{content: "Agadir";}
+    50%{content: "Fes";}
+    60%{content: "Meknes";}
+    70%{content: "Casablanca";}
+    80%{content: "Ifrane";}
+    90%{content: "Ouarzazate";}
+    100%{content: "Tetouan";}
+
+}
+
+
+
+.destinationcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    height: 250px;
+    width: 350px;
+}
+.card{
+    height: 250px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.intro{
+    height: 100px;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 8px;
+    position: absolute;
+    bottom: 200px;
+}
+
+
+.offer{
+    display: flex;
+    margin-left:20px ;
+}
+.cards{
+    height: 500px;
+    box-shadow: 4px 4px 10px black;
+    text-align: center;
+    width: 350px;
+    overflow: hidden;
+}
+.offer .cards .content{
+  position: relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-200px);
+  transition: 0.3s;
+}
+button{
+    position: absolute;
+    border: 3px solid rgba(255, 255, 255, 1);
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  backdrop-filter: blur(2px);
+  font-size: 1.3em;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.553);
+  color: #0a4870;
+}
+.intro{
+    height: 400px;
+    flex: 1 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, .8);
+  backdrop-filter: blur(6px);
+  transform: translateY(370px);
+  transition: 0.3s;
+}
+.intro h1{
+    position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.infor{
+    display: flex;
+}
+.infor p{
+    flex: 1 0;
+  padding: 10px;
+  margin-top: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.disclaimer{
+    margin-top: 40px;
+  font-size: 0.8em;
+  color: #7d7d7d;
+  opacity: 1;
+  transition: 0.3s;
+}
+.cards:hover .content{
+    opacity: 1;
+  transform: translateY(100px);
+}
+.cards:hover .intro{
+  transform: translateY(250px);
+}
+.cards:hover .disclaimer{
+    opacity: 1;
+  
+}

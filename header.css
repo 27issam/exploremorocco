@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:antiquewhite
+}
+body{
+    
+}
+.header{
+    width: 100%;
+    height: 70px; 
+    border: 1px solid grey;
+    position: relative;
+    text-align: center;
+}
+.div1{
+    background-color: rgba(26, 24, 24, 0.785);
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px;
+     
+}
+
+.iconleft{
+    display: flex;
+    justify-content:flex-start;
+    box-sizing: border-box;
+}
+.iconleft a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.803);
+    padding: 8px;
+    display: block;
+    
+}
+.iconright{
+    display: flex;
+    justify-content:flex-end;
+    box-sizing: border-box;
+}
+.iconright a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.803);
+    padding: 12px;
+    
+}
+/* icon end*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.logo{
+    flex: 1;
+    text-align: start;
+}
+
+.navlink{
+    flex: 1;
+    text-align: right;
+    justify-content: center;
+    
+}
+.navlink ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 2% 4%;
+}
+.navlink li a{
+    color: rgb(14, 15, 15);
+    text-decoration: none;
+    font-size: 20px;
+}
+.navlink li a:hover{
+    color:aqua
+}
+/* nav end */
+

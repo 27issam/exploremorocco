@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/sahara_1.jpg)  ;
+    background-size: cover;
+    background-position: center;
+    overflow-y: hidden;
+}
+.contain{
+    width: 400px;
+    height: 560px;
+    padding: 3px 6px;
+    margin:100px auto;
+    border-radius: 26px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 3px 16px 3px, rgba(223, 217, 217, 0.5);
+    text-align: center;
+    border: 4px solid white;
+}
+ h1{
+    align-items: center;
+    padding-top: 15px;
+    font-size: 1,2rem;
+    color: #252525;
+}
+h4{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: #232323;
+}
+form input{
+    width: 60%;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: #e4e4e4;;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    
+}
+button{
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #670D10 ;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color:#670D10;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 6px 3px rgb(0,0,0,0.2);
+}
+.member{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 0,8rem;
+    color: #252525;
+}
+
+.member input{
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+.member a{
+    text-decoration: none;
+    color: rgb(38,0,255);
+}
+.terms{
+    font-size: 0,8rem;
+    color: #252525;
+}
+.terms a{
+    text-decoration: none;
+    color: rgba(38,0,255);
+}
