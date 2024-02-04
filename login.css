@@ -16,42 +16,44 @@ body{
     height: 300px;
     padding: 3px 6px;
     margin:300px auto;
-    border-radius: 26px;
+    border-radius: 16px;
     background: transparent;
     backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px, rgba(0,0,0,.5);
+    box-shadow: 0px 3px 20px 3px, rgba(0,0,0,.5);
     text-align: center;
-    border: 4px solid white;
+    border: none;
 }
  h1{
     align-items: center;
     padding-top: 15px;
     font-size: 1,2rem;
     margin-bottom: 10px;
-
 }
 form input{
     width: 60%;
     outline: none;
-    border: 1px solid white;
-    border-radius: 20px;
-    background: #e4e4e4;;
+    border: none;
+    border-radius: 6px;
+    background: #e4e4e4;
+    backdrop-filter: blur(4px);
     padding: 10px 20px;
     margin-bottom: 10px;
-    
+    box-shadow: 0 0 4px rgba(0,0,0,0.74);
 }
 button{
     width: 40%;
     margin-top: 10px;
     margin-bottom: 20px; 
     border: 1px solid #670D10;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 10px 20px;
     background-color:#670D10;
     color: white;
+    transition-duration: 1s;
 }
 button:hover{
     box-shadow: 0px 3px 6px 3px rgba(0,0,0,.5);
+    transform: scale(1.1);
 }
 .forget{ 
     font-size: 0,8rem;
@@ -60,7 +62,7 @@ button:hover{
 }
 .forget a{
     text-decoration: none;
-    color: rgb(38, 0, 255);
+    color: rgb(255, 255, 255);
 }
 .terms{
     font-size: 0,8rem;
@@ -68,6 +70,6 @@ button:hover{
 }
 .terms a{
     text-decoration: none;
-    color: rgba(38,0,255);
+    color: rgba(255,255,255);
 }
 
