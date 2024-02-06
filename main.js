@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("rot-btn-front").style.visibility =
       "visible";
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       document.querySelector(".card-inner").classList.toggle("is-flipped");
     };
   });
+  */
   const cards = document.querySelectorAll('.card-inner'); 
 
 function flipCard() {
